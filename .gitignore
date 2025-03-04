@@ -1,0 +1,6 @@
+__pycache__/
+
+run_main.sh
+evaluate.py
+datasets/
+beit_pretrained/
