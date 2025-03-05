@@ -85,7 +85,7 @@ $ bash scripts/examples_gen.sh \
 ```
 Replace `ckpt_path` with the path of BEiT-3 finetuned on OK-VQA. The extracted in-context examples will be stored as `examples.json` in `outputs/results/{your_version_name}` directory.
 
-You can finetune the model and select in-context examples for A-OKVQA similar way as above by just replacing `task` with `aok_val` or `aok_test`. The in-context examples for A-OKVQA used in our experiments are provided in `beit3_examples/a_ok_vqa/examples.json`.
+You can finetune the model and select in-context examples for A-OKVQA similar way as above by just replacing `task` with `aok_val` or `aok_test`. The in-context examples for A-OKVQA used in our experiments are provided in `beit3_examples/a_ok_vqa/examples.json`. 
 
 ## 📌 Notes
 - Ensure you replace `/path_to_the_train_images/` and `/path_to_the_val_images/` with the actual paths to your dataset images.
