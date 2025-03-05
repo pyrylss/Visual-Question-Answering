@@ -1,7 +1,5 @@
 # Framework for VQA
 
-![Description](framework.png)
-
 
 ## Install
 
@@ -14,7 +12,7 @@ pip install -r requirements.txt
 ---
 
 ## **Run the Code**
-Before running the code, you need to download the LLaMA weights and convert them to the Hugging Face Transformers format. Download MSCOCO 2014 and 2017 datasets from [here](https://cocodataset.org/#download) and put them to dataset folder. MSCOCO 2017 is not needed if you only experiment with OK-VQA.
+Before running the code, you need to download the LLaMA weights 2 in the Hugging Face Transformers format from [here](https://huggingface.co/meta-llama/Llama-2-13b-hf). Download MSCOCO 2014 and 2017 datasets from [here](https://cocodataset.org/#download) and put them to dataset folder. MSCOCO 2017 is not needed if you only experiment with OK-VQA.
 
 The datasets folder should have the following structure:
 
@@ -91,7 +89,7 @@ You can finetune the model and select in-context examples for A-OKVQA similar wa
 
 ## 📌 Notes
 - Ensure you replace `/path_to_the_train_images/` and `/path_to_the_val_images/` with the actual paths to your dataset images.
-- The LLaMA model should be placed in the `meta-llama/Llama-2-13b-hf` directory.
+- The LLaMA model should be placed in `meta-llama/Llama-2-13b-hf`.
 
 ## 🙌 Thanks & Acknowledgments
 The code in this repository is based on [Simple](https://github.com/alexandrosXe/A-Simple-Baseline-For-Knowledge-Based-VQA), and is extended by fine-tuning a retriever to improve the knowledge retrieval process. The retrieved knowledge was then incorporated into caption generation. Additionally, BEiT-3 was fine-tuned for in-context example selection.  
