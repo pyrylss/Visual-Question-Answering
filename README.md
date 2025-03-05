@@ -72,7 +72,7 @@ python main.py \
 ---
 
 ## Finetuning and Example Selection
-To finetune BEiT-3 for in-context example selection run the following commands:
+If you want to finetune BEiT-3 for in-context example selection yourself, instead of using the provided examples in `beit3_examples/ok_vqa/examples.json`, run the following commands:
 ```bash
 bash scripts/finetune.sh \
     --task ok --version finetune_beit_ok --gpu 0 \
@@ -85,7 +85,7 @@ $ bash scripts/examples_gen.sh \
     --gpu 0 --ckpt_path /path/to/finetuned/model.pkl \
     --example_num 50
 ```
-Replace `ckpt_path` with the path of BEiT-3 finetuned on OK-VQA. The extracted in-context examples will be stored as `examples.json` in `outputs/results/{your_version_name}` directory. We provide the in-context examples used in our experiments in `beit3_examples/ok_vqa/examples.json`.
+Replace `ckpt_path` with the path of BEiT-3 finetuned on OK-VQA. The extracted in-context examples will be stored as `examples.json` in `outputs/results/{your_version_name}` directory.
 
 You can finetune the model and select in-context examples for A-OKVQA similar way as above by just replacing `task` with `aok_val` or `aok_test`. The in-context examples for A-OKVQA used in our experiments are provided in `beit3_examples/a_ok_vqa/examples.json`.
 
