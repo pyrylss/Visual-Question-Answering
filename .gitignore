@@ -1,0 +1,8 @@
+__pycache__/
+
+evaluate.py
+datasets/
+beit_pretrained/
+output_*
+errors_*
+okvqa_val.csv
