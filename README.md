@@ -76,7 +76,7 @@ If you want to finetune BEiT-3 for in-context example selection yourself, instea
 ```bash
 bash scripts/finetune.sh \
     --task ok --version finetune_beit_ok --gpu 0 \
-    --pretrained_model /Knowledge-Integrated-Reasoning-VQA/beit_pretrained/mp_rank_00_model_states.pt
+    --pretrained_model /Visual-Question-Answering/beit_pretrained/mp_rank_00_model_states.pt
 ```
 Replace `pretrained_model` with the path of BEiT-3 finetuned on VQAv2. Instructions for VQAv2 finetuning can be found [here](https://github.com/microsoft/unilm/blob/master/beit3/README.md). All epoch checkpoints are saved in `outputs/ckpts/{your_version_name}`. You can then use the finetuned model for in-context example selection by running the following command:
 ```bash
