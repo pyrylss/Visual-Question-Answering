@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ---
 
 ## **Run the Code**
-Before running the code, you need to download the LLaMA weights 2 in the Hugging Face Transformers format from [here](https://huggingface.co/meta-llama/Llama-2-13b-hf). Download MSCOCO 2014 and 2017 datasets from [here](https://cocodataset.org/#download) and put them to dataset folder. MSCOCO 2017 is not needed if you only experiment with OK-VQA.
+Before running the code, you need to download the LLaMA 2 weights in the Hugging Face Transformers format from [here](https://huggingface.co/meta-llama/Llama-2-13b-hf). Download MSCOCO 2014 and 2017 datasets from [here](https://cocodataset.org/#download) and put them to dataset folder. MSCOCO 2017 is not needed if you only experiment with OK-VQA.
 
 The datasets folder should have the following structure:
 
