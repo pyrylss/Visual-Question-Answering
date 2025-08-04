@@ -2,6 +2,8 @@
 
 ![Model diagram](framework.png)
 
+The ES module leverages BEiT3's latent answer space to select N examples (E). The QGC module generates question-guided captions (QGCs) for each image-question pair, while the Retriever retrieves knowledge from the Google Search (GS) corpus. The KGC module then fuses each image, question, and retrieved knowledge to generate knowledge-guided captions (KGCs). The KEP module builds $k$ knowledge-enriched prompts, leveraging E, QGCs, and KGCs. Finally, LLaMA 2 processes these prompts to generate k answer predictions. The most frequent prediction is chosen as the final answer.
+
 ## Install
 
 First, install the necessary dependencies:
