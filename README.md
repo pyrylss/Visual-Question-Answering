@@ -1,5 +1,6 @@
 # Framework for VQA
 
+![Model diagram](diagram.png)
 
 ## Install
 
